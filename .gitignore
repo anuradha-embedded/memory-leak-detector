@@ -1,0 +1,37 @@
+# Build directories
+build/
+build-*/
+cmake-build-*/
+out/
+
+# CMake artifacts
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+CTestTestfile.cmake
+Testing/
+install_manifest.txt
+compile_commands.json
+*.cmake.stamp
+
+# Object files, libraries, executables
+*.o
+*.obj
+*.a
+*.lib
+*.so
+*.dylib
+*.dll
+*.out
+*.exe
+memleak_demo
+tracker_tests
+
+# Editor / IDE
+.vscode/
+.idea/
+*.swp
+*~
+
+# macOS
+.DS_Store
