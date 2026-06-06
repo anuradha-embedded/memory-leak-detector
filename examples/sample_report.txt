@@ -1,0 +1,15 @@
+$ ./track_workload
+after acquiring 5 nodes: 6 live (cache buffer + nodes)
+after buggy clear:       2 live
+
+The at-exit handler will report the leaked node:
+================ memleak: leak report ================
+Detected 1 live allocation(s), 4 byte(s) leaked.
+(lifetime: 9 tracked, 8 freed)
+------------------------------------------------------
+#1  4 byte(s)  @ 0x55a3c1f2bc40  (alloc #8)
+      at memleak::Tracker::recordAllocation(void*, unsigned long)
+      at operator new(unsigned long)
+      at (anonymous namespace)::NodeCache::acquire(int)
+      at main
+======================================================
