@@ -18,6 +18,7 @@
 #include <cstddef>
 #include <cstdint>
 #include <iostream>
+#include <new>
 #include <vector>
 
 namespace {
